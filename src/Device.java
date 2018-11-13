@@ -20,6 +20,8 @@ public class Device {
         return name;
     }
 
+    public String getModel() {return model;}
+
     public void doSomething() {
         System.out.println("Я делаю что-то");
     }

@@ -40,11 +40,11 @@ public class RemoteControl {
 
     public void showAllDevicesInSystem() {
         if (devices.size() == 0) {
-            System.out.println("LДобавьте устройства в систему управления");
+            System.out.println("Добавьте устройства в систему управления");
         } else {
-            System.out.println("Доступные устройства");
+            System.out.println("Доступные устройства: ");
             for (Device devices : devices) {
-                System.out.println(devices.getName() + "      ");
+                System.out.println(devices.getName() +" "+ devices.getModel() +"      ");
             }
         }
     }
@@ -65,5 +65,9 @@ public class RemoteControl {
 
     public Device getActiveDevice() {
         return activeDevice;
+    }
+
+    public ArrayList<Device> getDevices() {
+        return devices;
     }
 }
